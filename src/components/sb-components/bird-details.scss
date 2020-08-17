@@ -1,0 +1,12 @@
+.bird-details {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid #444;
+  width: 100%;
+  .bird-image {
+    width: 190px;
+    height: 165px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+}

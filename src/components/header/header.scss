@@ -1,0 +1,35 @@
+.header {
+  margin-top: 0.5rem;
+  flex-direction: column;
+
+  .top-row {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 200px;
+      height: 55px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .pagination {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    .page-item {
+      flex: auto;
+      text-align: center;
+      .page-link {
+        cursor: auto;
+        border-radius: 0 !important;
+      }
+    }
+  }
+}
