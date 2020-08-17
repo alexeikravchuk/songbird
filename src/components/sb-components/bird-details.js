@@ -38,23 +38,22 @@ const BirdView = ({ bird }) => {
 
   return (
     <>
-      <img className="bird-image" src={image} alt="bird" />
-      <div>
-        <ul className="list-group list-group-flush">
+      <div className="card-body row">
+        <img className="bird-image col-sm-4" src={image} alt="bird" />
+        <ul className="list-group list-group-flush col-sm-8">
           <li className="list-group-item">
-            <h4>{name}</h4>
+            <h4 className="card-title">{name}</h4>
           </li>
           <li className="list-group-item">
             <span>{species}</span>
           </li>
           <li className="list-group-item">
-            <AudioPlayer control={false} src={audio} />
-          </li>
-          <li className="list-group-item">
-            <p>{description}</p>
+            <AudioPlayer autoPlay={false} src={audio} />
           </li>
         </ul>
       </div>
+
+      <p className="card-text">{description}</p>
     </>
   );
 };

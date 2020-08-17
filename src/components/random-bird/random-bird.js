@@ -7,18 +7,26 @@ import Spinner from '../spinner';
 import ErrorIndicator from '../error-indicator';
 import BirdService from '../../services/dummy-bird-service';
 
+import defaultImg from '../../../public/default-bird.jpg';
+
 import './random-bird.scss';
 
 export default class RandomBird extends Component {
   birdService = new BirdService();
 
   state = {
-    bird: {},
+    bird: null,
     loading: true,
   };
 
   componentDidMount() {
     this.updateBird();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.id !== prevProps.id || this.props.step !== prevProps.step) {
+      this.updateBird();
+    }
   }
 
   onBirdLoaded = (bird) => {
@@ -43,12 +51,13 @@ export default class RandomBird extends Component {
 
   render() {
     const { bird, loading, error } = this.state;
+    const { isCorrect } = this.props;
 
     const hasData = !(loading || error);
 
     const errorMessage = error ? <ErrorIndicator /> : null;
     const spinner = loading ? <Spinner /> : null;
-    const content = hasData ? <BirdView bird={bird} /> : null;
+    const content = hasData ? <BirdView bird={bird} isCorrect={isCorrect} /> : null;
 
     return (
       <div className="random-bird jumbotron rounded">
@@ -60,19 +69,19 @@ export default class RandomBird extends Component {
   }
 }
 
-const BirdView = ({ bird }) => {
+const BirdView = ({ bird, isCorrect }) => {
   const { name, image, audio } = bird;
 
   return (
     <>
-      <img className="bird-image" src={image} alt="bird" />
+      <img className="bird-image" src={isCorrect ? image : defaultImg} alt="bird" />
       <div>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
-            <h3>{name}</h3>
+            <h3>{isCorrect ? name : '******'}</h3>
           </li>
           <li className="list-group-item">
-            <AudioPlayer control={false} src={audio} />
+            <AudioPlayer autoPlay={false} control={false} src={audio} />
           </li>
         </ul>
       </div>
