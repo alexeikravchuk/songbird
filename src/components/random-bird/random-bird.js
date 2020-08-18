@@ -7,7 +7,7 @@ import Spinner from '../spinner';
 import ErrorIndicator from '../error-indicator';
 import BirdService from '../../services/dummy-bird-service';
 
-import defaultImg from '../../../public/default-bird.jpg';
+import defaultImg from '../../../public/assets/img/default-bird.jpg';
 
 import './random-bird.scss';
 
@@ -71,6 +71,7 @@ export default class RandomBird extends Component {
 
 const BirdView = ({ bird, isCorrect }) => {
   const { name, image, audio } = bird;
+  this.player = createRef()
 
   return (
     <>
@@ -81,7 +82,12 @@ const BirdView = ({ bird, isCorrect }) => {
             <h3>{isCorrect ? name : '******'}</h3>
           </li>
           <li className="list-group-item">
-            <AudioPlayer autoPlay={false} control={false} src={audio} />
+            <AudioPlayer
+              autoPlay={false}
+              autoPlayAfterSrcChange={false}
+              control={false}
+              src={audio}
+            />
           </li>
         </ul>
       </div>

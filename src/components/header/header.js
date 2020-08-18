@@ -1,9 +1,10 @@
 import React from 'react';
 
 import './header.scss';
-import Logo from '../../../public/logo.png';
+import Logo from '../../../public/assets/img/logo.png';
+import steps from '../../../public/steps';
 
-const Header = ({ score }) => {
+const Header = ({ score, step }) => {
   return (
     <header className="header d-flex">
       <div className="top-row">
@@ -16,36 +17,13 @@ const Header = ({ score }) => {
       </div>
 
       <ul className="pagination">
-        <li className="page-item active">
-          <a className="page-link" href="/#">
-            Разминка
-          </a>
-        </li>
-        <li className="page-item">
-          <a className="page-link" href="/#">
-            Воробьиные
-          </a>
-        </li>
-        <li className="page-item">
-          <a className="page-link" href="/#">
-            Лесные птицы
-          </a>
-        </li>
-        <li className="page-item">
-          <a className="page-link" href="/#">
-            Певчие птицы
-          </a>
-        </li>
-        <li className="page-item">
-          <a className="page-link" href="/#">
-            Хищные птицы
-          </a>
-        </li>
-        <li className="page-item">
-          <a className="page-link" href="/#">
-            Морские птицы
-          </a>
-        </li>
+        {steps.map((name, index) => (
+          <li className={`page-item${step === index ? ' active' : ''}`}>
+            <a className="page-link" href="/#">
+              {name}
+            </a>
+          </li>
+        ))}
       </ul>
     </header>
   );

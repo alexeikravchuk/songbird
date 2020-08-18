@@ -1,16 +1,22 @@
-/* eslint-disable */
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
 const plugins = () => {
   const base = [
+    new CopyPlugin({
+      patterns: [
+        { from: './public/assets/sound', to: './dist' },
+        { from: './public/favicon.ico', to: './dist' },
+      ],
+    }),
     new HtmlWebpackPlugin({
       template: 'public/index.html',
       minify: {

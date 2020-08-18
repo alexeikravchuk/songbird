@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './item-list.css';
+import './item-list.scss';
 
-const ItemList = (props) => {
-  const { data, onItemSelected } = props;
-
-  const items = data.map(({ id, name }) => {
+const ItemList = ({ data, onItemSelected }) => {
+  const items = data.map(({ id, name, isCorrect }) => {
+    const extraClass = isCorrect !== undefined && (isCorrect ? 'correct' : 'error');
     return (
       <li className="list-group-item" key={id} onClick={() => onItemSelected(id)}>
+        <span className={`marker ${extraClass || ''}`} />
         <span>{name}</span>
       </li>
     );

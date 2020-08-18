@@ -26,6 +26,7 @@
     "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8",
     "autoprefixer": "^9.8.5",
+    "copy-webpack-plugin": "^6.0.3",
     "core-js": "^3.6.5",
     "express": "^4.17.1",
     "lodash": "^4.17.19",

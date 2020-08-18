@@ -48,7 +48,7 @@ const BirdView = ({ bird }) => {
             <span>{species}</span>
           </li>
           <li className="list-group-item">
-            <AudioPlayer autoPlay={false} src={audio} />
+            <AudioPlayer autoPlay={false} autoPlayAfterSrcChange={false} src={audio} />
           </li>
         </ul>
       </div>
