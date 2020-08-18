@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
@@ -71,7 +71,9 @@ export default class RandomBird extends Component {
 
 const BirdView = ({ bird, isCorrect }) => {
   const { name, image, audio } = bird;
-  this.player = createRef()
+  const player = useRef(null);
+
+  if (isCorrect) player.current.audio.current.pause();
 
   return (
     <>
@@ -83,6 +85,7 @@ const BirdView = ({ bird, isCorrect }) => {
           </li>
           <li className="list-group-item">
             <AudioPlayer
+              ref={player}
               autoPlay={false}
               autoPlayAfterSrcChange={false}
               control={false}

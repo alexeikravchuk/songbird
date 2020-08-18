@@ -13,8 +13,8 @@ const plugins = () => {
   const base = [
     new CopyPlugin({
       patterns: [
-        { from: './public/assets/sound', to: './dist' },
-        { from: './public/favicon.ico', to: './dist' },
+        { from: './public/assets/sound', to: './sound' },
+        { from: './public/favicon.ico', to: '.' },
       ],
     }),
     new HtmlWebpackPlugin({
