@@ -94,6 +94,8 @@ export default class App extends Component {
     const { step, stepData, score, id, selectedItem, isCorrect, win } = this.state;
 
     if (win) {
+      const tadaUrl = './sound/tada.mp3';
+      new Audio(tadaUrl).play().catch(() => null);
       return <GameResult score={score} resetGame={this.resetGame} />;
     }
 
