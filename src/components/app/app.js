@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import Header from '../header';
 import ErrorBoundry from '../error-boundry';
 import RandomBird from '../random-bird';
-import BirdService from '../../services/dummy-bird-service';
+import BirdService from '../../services/bird-service';
 import { BirdDetails, BirdList } from '../sb-components';
 import Row from '../row';
 
-import './app.css';
+import './app.scss';
 import { GameResult } from '../game-result/game-result';
 
 export default class App extends Component {
@@ -103,10 +103,10 @@ export default class App extends Component {
       <ErrorBoundry>
         <div className="stardb-app">
           <Header score={score} step={step} />
-          <RandomBird step={step} id={id} isCorrect={isCorrect} />
+          <RandomBird step={step} id={id} isCorrect={isCorrect} birdService={this.birdService} />
           <Row
             left={<BirdList onItemSelected={this.onItemSelected} data={stepData} />}
-            right={<BirdDetails itemId={selectedItem} step={step} />}
+            right={<BirdDetails itemId={selectedItem} step={step} birdService={this.birdService} />}
           />
           <button
             className={`btn btn-lg btn-block ${isCorrect ? 'btn-success' : 'btn-secondary'}`}

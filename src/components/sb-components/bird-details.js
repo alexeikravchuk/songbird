@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import AudioPlayer from 'react-h5-audio-player';
-import BirdService from '../../services/dummy-bird-service';
 import ErrorIndicator from '../error-indicator';
 
 import './bird-details.scss';
 
-export default ({ itemId, step }) => {
+export default ({ itemId, step, birdService }) => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(false);
 
-  const birdService = new BirdService();
   birdService
     .getBird(step, itemId)
     .then(setData)

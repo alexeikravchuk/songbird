@@ -5,15 +5,12 @@ import 'react-h5-audio-player/lib/styles.css';
 
 import Spinner from '../spinner';
 import ErrorIndicator from '../error-indicator';
-import BirdService from '../../services/dummy-bird-service';
 
 import defaultImg from '../../../public/assets/img/default-bird.jpg';
 
 import './random-bird.scss';
 
 export default class RandomBird extends Component {
-  birdService = new BirdService();
-
   state = {
     bird: null,
     loading: true,
@@ -45,8 +42,8 @@ export default class RandomBird extends Component {
   };
 
   updateBird = () => {
-    const { step, id } = this.props;
-    this.birdService.getBird(step, id).then(this.onBirdLoaded).catch(this.onError);
+    const { step, id, birdService } = this.props;
+    birdService.getBird(step, id).then(this.onBirdLoaded).catch(this.onError);
   };
 
   render() {

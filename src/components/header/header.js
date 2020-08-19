@@ -2,7 +2,7 @@ import React from 'react';
 
 import './header.scss';
 import Logo from '../../../public/assets/img/logo.png';
-import steps from '../../../public/steps';
+import { birdGroups } from '../../../public/birdbase';
 
 const Header = ({ score, step }) => {
   return (
@@ -17,7 +17,7 @@ const Header = ({ score, step }) => {
       </div>
 
       <ul className="pagination">
-        {steps.map((name, index) => (
+        {birdGroups.map((name, index) => (
           <li className={`page-item${step === index ? ' active' : ''}`} key={name}>
             <a className="page-link" href="/#">
               {name}
