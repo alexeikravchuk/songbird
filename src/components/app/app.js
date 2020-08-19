@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unused-state */
 import React, { Component } from 'react';
 
 import Header from '../header';
@@ -9,6 +8,7 @@ import { BirdDetails, BirdList } from '../sb-components';
 import Row from '../row';
 
 import './app.css';
+import { GameResult } from '../game-result/game-result';
 
 export default class App extends Component {
   birdService = new BirdService();
@@ -16,7 +16,6 @@ export default class App extends Component {
   state = {
     step: 0,
     stepData: [],
-    birdId: null,
     id: 1,
     isCorrect: false,
     win: false,
@@ -25,14 +24,14 @@ export default class App extends Component {
   };
 
   componentDidMount = () => {
-    const { step } = this.state;
-    this.setStepData(step);
+    this.setStepData(0);
   };
 
   setStepData = async (step) => {
-    const stepData = await this.birdService.getAllBird(step);
+    const data = await this.birdService.getAllBird(step);
+    const stepData = data.map((bird) => ({ ...bird, isCorrect: undefined }));
     const id = Math.floor(Math.random() * 6) + 1;
-    this.setState({ stepData, id });
+    this.setState({ stepData, id, step });
   };
 
   onItemSelected = (id) => {
@@ -85,8 +84,19 @@ export default class App extends Component {
     }
   };
 
+  resetGame = () => {
+    this.birdService = new BirdService();
+    this.setStepData(0);
+    this.setState({ isCorrect: false, win: false, score: 0, selectedItem: null });
+  };
+
   render() {
-    const { step, stepData, score, id, selectedItem, isCorrect } = this.state;
+    const { step, stepData, score, id, selectedItem, isCorrect, win } = this.state;
+
+    if (win) {
+      return <GameResult score={score} resetGame={this.resetGame} />;
+    }
+
     return (
       <ErrorBoundry>
         <div className="stardb-app">
@@ -100,7 +110,7 @@ export default class App extends Component {
             className={`btn btn-lg btn-block ${isCorrect ? 'btn-success' : 'btn-secondary'}`}
             onClick={this.nextPage}
           >
-            Следующий уровень
+            Дальше
           </button>
         </div>
       </ErrorBoundry>

@@ -1,0 +1,10 @@
+.modal {
+  display: flex;
+  align-items: center;
+  &-content {
+    padding: 1rem;
+  }
+  &-header {
+    justify-content: center;
+  }
+}
