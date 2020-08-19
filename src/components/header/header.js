@@ -18,7 +18,7 @@ const Header = ({ score, step }) => {
 
       <ul className="pagination">
         {steps.map((name, index) => (
-          <li className={`page-item${step === index ? ' active' : ''}`}>
+          <li className={`page-item${step === index ? ' active' : ''}`} key={name}>
             <a className="page-link" href="/#">
               {name}
             </a>
