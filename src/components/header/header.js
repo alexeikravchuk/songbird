@@ -11,9 +11,9 @@ const Header = ({ score, step }) => {
         <a href="#/">
           <img className="logo" src={Logo} alt="logo" />
         </a>
-        <div className="score">
+        <h5 className="score">
           Score: <span>{score}</span>
-        </div>
+        </h5>
       </div>
 
       <ul className="pagination">

@@ -62,8 +62,8 @@ export default class App extends Component {
   };
 
   playSound = (isCorrect) => {
-    const correctUrl = './assets/correct.mp3';
-    const errorUrl = './assets/error.mp3';
+    const correctUrl = './sound/correct.mp3';
+    const errorUrl = './sound/error.mp3';
     if (isCorrect) {
       return new Audio(correctUrl).play().catch(() => null);
     }
