@@ -1,8 +1,35 @@
+@keyframes text-shadow {
+  0% {
+    text-shadow: 2px 0 1px #6a7;
+    text-decoration: none;
+  }
+  25% {
+    text-shadow: 2px 0 10px #c55;
+    text-decoration: underline;
+  }
+  50% {
+    text-shadow: 2px 0 15px #44b;
+    text-decoration: underline;
+  }
+  75% {
+    text-shadow: 2px 0 10px #bbb;
+    text-decoration: underline;
+  }
+  100% {
+    text-shadow: 2px 0 1px #6a7;
+    text-decoration: none;
+  }
+}
+
 .modal {
   display: flex;
   align-items: center;
   &-content {
     padding: 1rem;
+    .victory {
+      font-size: 2rem;
+      animation: text-shadow 2s infinite;
+    }
   }
   &-header {
     justify-content: center;

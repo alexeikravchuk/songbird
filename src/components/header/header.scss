@@ -27,8 +27,11 @@
       flex: auto;
       text-align: center;
       .page-link {
-        cursor: auto;
+        cursor: default;
         border-radius: 0 !important;
+        &:focus {
+          box-shadow: none;
+        }
       }
     }
   }
