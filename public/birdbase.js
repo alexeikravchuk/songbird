@@ -133,61 +133,63 @@ const birdsData = [
   [
     {
       id: 1,
-      name: 'Зяблик',
-      species: 'Fringilla coelebs',
+      name: 'Пёстрый дятел',
+      species: 'Dendrocopos major',
       description:
-        'В дикой природе насчитывается 450 видов зябликов. Зимой зяблики ведут стайный образ жизни. Иногда в их семьях можно увидеть воробьев. Запевают зяблики весной, с наступлением брачного периода. Их пение – это заливистые многоминутные рулады.',
-      image: 'https://live.staticflickr.com/65535/49143150817_2d3a2f6c1e.jpg',
+        'Дятел играет важную роль в экологии леса, оставляя выдолбленные им дупла для других гнездящихся в них мелких птиц, таких как синицы и мухоловки. Кроме того, он в большом количестве поедает лесных вредителей — тлю, гусениц бабочек и питающихся древесиной насекомых — усачей, златок, короедов, муравьёв и многих других.',
+      image: 'https://live.staticflickr.com/4551/38027409324_2b94e59df3_z.jpg',
       audio:
-        'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC512407-150622_03%20zi%C4%99ba%20%282%29.mp3',
+        'https://www.xeno-canto.org/sounds/uploaded/PNYKOPBQBQ/XC511652-DENMAJ291119-T006_INTERACT%20%282%29.mp3',
     },
     {
       id: 2,
-      name: 'Клёст',
-      species: 'Loxia curvirostra',
+      name: 'Сойка',
+      species: 'Garrulus glandarius',
       description:
-        'Клестов называют «рождественскими» птицами. В естественных условиях они дают потомство зимой – в январе. Эти птицы утепляют свои гнезда мхом и шерстью животных, потому птенцам не холодно. В поисках шишек клесты могут улетать за 3500 км от гнезда.',
-      image: 'https://live.staticflickr.com//65535//49365470123_f2de66bb35.jpg',
+        'Сойка размером с галку. Имеет яркое, рыхлое оперение, заметный широкий хохол на голове и довольно длинный хвост. Крик — резкое «дчээ-дчээ» и дребезжащее «пиррь». Песня — набор резких звуков и подражаний другим видам птиц. Кроме того, сойка легко обучается подражать любым звукам, от человеческого голоса до стука топора.',
+      image: 'https://live.staticflickr.com/65535/49096393327_44ca4b2126_z.jpg',
       audio:
-        'https://www.xeno-canto.org/sounds/uploaded/OTVUCEGYZN/XC495381-Kruisbek%20roep%20NHD%20290619.mp3',
+        'https://www.xeno-canto.org/sounds/uploaded/OXKHFMOYKQ/XC142606-Vg_Cling_130712-01_xc.mp3',
     },
     {
       id: 3,
-      name: 'Горлица',
-      species: 'Streptopelia turtur',
+      name: 'Крапивник',
+      species: 'Troglodytes troglodytes',
       description:
-        'Горлица обитает в смешанных и широколиственных лесах, а также в городских парках и поселках. Птицы часто выбирают места жизни рядом с человеком и легко привыкают к людям. Благодаря мелодичному приятному пению горлиц часто разводят в домашних условиях.',
-      image: 'https://live.staticflickr.com/65535/48063004977_84252f9ceb.jpg',
+        'Внешне похож на мягкий пушистый шарик с поднятым торчком коротким хвостиком. Птица очень подвижная, с необычно громким голосом — самцы помечают свою обширную территорию, сидя на каком-нибудь возвышении и распевая свою своеобразную, торопливую песню, состоящую из очень звучных быстрых трелей.',
+      image: 'https://live.staticflickr.com/65535/49346952281_8cc248aebb_z.jpg',
       audio:
-        'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC324106-Turkawka_Streptopelia_turtur_Poland_Jarek_Matusiak_2011625_07.mp3',
+        'https://www.xeno-canto.org/sounds/uploaded/VCROLXMVLX/XC179003-troglodytes_trogodytes_zielonka_wielkopolskie_21_05_2014_0903.mp3',
     },
     {
       id: 4,
-      name: 'Дятел',
-      species: 'Dendrocopos major',
+      name: 'Свиристель',
+      species: 'Bombycilla garrulus',
       description:
-        'Дятел – заметная и шумная птица, часто живет рядом с человеком. С середины января до конца июня можно услышать «барабанную дробь» дятлов – трель от вибрации веток под быстрыми ударами клюва птицы. В хорошую погоду дробь слышна в радиусе 1,5 км.',
-      image: 'https://live.staticflickr.com/65535/49339376578_e933426455.jpg',
+        'Распространён в зоне таёжных лесов Северного полушария. Обитает в разреженных хвойных и смешанных лесах, на зарастающих горах и вырубках. Каждый год свиристель ищет себе нового партнёра. Ухаживание за самкой включает в себя её кормление ягодами.',
+      image: 'https://live.staticflickr.com/65535/49599943546_82787b9e33_z.jpg',
       audio:
-        'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC518928-AB-017%20dzi%C4%99cio%C5%82%20du%C5%BCy%20agresja%20%282%29.mp3',
+        'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC123377-Bombycilla_garrulus_Poland_Jarek_Matusiak_201300301-040.mp3',
     },
     {
       id: 5,
-      name: 'Удод',
-      species: 'Upupa epops',
+      name: 'Кукушка',
+      species: 'Cuculus canorus',
       description:
-        'Удоды предпочитают жить на открытых ландшафтах с отдельными деревьями или рощами. Наиболее удобными для птицы являются лесостепь и саванна. Удод может выбирать места жительства рядом с человеком: пастбища, виноградники, фруктовые сады.',
-      image: 'https://live.staticflickr.com//65535//49226383598_6f8be86a06.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC477326-dudek%20%282%29.mp3',
+        'Большую часть года обыкновенная кукушка ведёт скрытный, молчаливый образ жизни. Лишь весной и в первой половине лета самки и особенно самцы становятся заметными и шумными, привлекая к себе внимание. Наиболее известна брачная песня самца — громкий размеренный крик «ку-ку…ку-ку…», многократно повторяемый с усилением на первом слоге. В ясную безветренную погоду её можно услышать на расстоянии до двух километров.',
+      image: 'https://live.staticflickr.com/65535/49814033896_5bf6f1bb3f_n.jpg',
+      audio:
+        'https://www.xeno-canto.org/sounds/uploaded/OQZFKFTAKD/XC580937-KUCKUCKE%2C%20Duett%20%2009.05.2020%20%20Kiesgr.%20Th.%20Ost%20%205_53%20VOC_200509-8298%20Ausschn.%20Dawn-Konz..mp3',
     },
     {
       id: 6,
-      name: 'Стриж',
-      species: 'Apus apus',
+      name: 'Клёст-сосновик',
+      species: 'Loxia pytyopsittacus',
       description:
-        'Стрижа можно увидеть практически в каждом уголке планеты. Они обитают как в лесных зонах, так и на открытых местностях. Живут стрижи крупными стаями. Большие колонии этих птиц можно увидеть в городах или на прибрежных скалах.',
-      image: 'https://live.staticflickr.com//65535//48386150031_7b749df74b.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/TMUAWSDHDJ/XC511871-G.mp3',
+        'Довольно крупный вид клестов: длина его тела составляет от 16 до 18 см. Клёст-сосновик живёт в хвойных лесах с преобладанием сосен и питается семенами сосны и других хвойных. Клёст-сосновик гнездится в Скандинавии и на северо-востоке Европы.',
+      image: 'https://live.staticflickr.com/4668/38652553730_c4540cb4bb_n.jpg',
+      audio:
+        'https://www.xeno-canto.org/sounds/uploaded/RDRHSLUBZP/XC419338-180304_07_Loxia_pytyopsittacus.mp3',
     },
   ],
   [
@@ -252,122 +254,122 @@ const birdsData = [
   [
     {
       id: 1,
-      name: 'Орёл',
-      species: 'Aquila nipalensis',
+      name: 'Беркут',
+      species: 'Aquila chrysaetos',
       description:
-        'В древние времена орел был символом солнца. Орлы часто парят над землей, при этом скорость их перемещения может достигать 240 км/ч. Иллюзия медленного движения происходит из-за высоты полета – более 700 метров',
-      image: 'https://live.staticflickr.com//4835//43867392960_7105d71e19.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/KTBTZAHSXF/10_Aquila_nipalensis_al02D85.mp3',
+        'У беркута, как и у других орлов, а также ястребов и соколов, чрезвычайно острое зрение, но только в светлое время суток. Так, например, зайца этот орёл видит на расстоянии до двух километров.[13] Ряд адаптаций, выразившихся в способности быстро определить величину объекта и расстояние до него, развились в результате эволюции.',
+      image: 'https://live.staticflickr.com/65535/48931138933_4df72df70e_z.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC572763-Kungsörn_05.mp3',
     },
     {
       id: 2,
-      name: 'Коршун',
-      species: 'Milvus migrans',
+      name: 'Скопа',
+      species: 'Pandion haliaetus',
       description:
-        'Коршуны – крупные хищники, в высоту они достигают около полуметра, а вес взрослых особей достигает 1 кг. Крылья узкие и длинные, их размах составляет 1,5 м. Коршуны часто гнездятся большими стаями и даже образуют крупные колонии.',
-      image: 'https://live.staticflickr.com//65535//48701190276_ee2a9ed594.jpg',
+        'В отличие от других хищных птиц, рацион скопы почти полностью (более 99 %) состоит из рыбы. В выборе конкретных видов птицы неразборчивы и питаются всем, что в состоянии поймать у поверхности воды. Хотя подавляющее большинство рациона вида составляет рыба, иногда они могут охотиться на других птиц, змей, ондатр, полёвок, белок, саламандр и даже маленьких аллигаторов.',
+      image: 'https://live.staticflickr.com/5529/31323487292_e02b389426_z.jpg',
       audio:
-        'https://www.xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC485740-2019-06-22%20Selenga%20Milan%20brun%20cris%20de%20quemandage%203.mp3',
+        'https://www.xeno-canto.org/sounds/uploaded/LELYWQKUZX/XC272314-Pandion%20haliaetus%20150624_001%2C%20Хмёлёвка%20гн%20Скопы%20с%203%20мя%20пт%2010-00%20-%2016-00%2C%20AAAA%21%2B%2B%2B.MP3',
     },
     {
       id: 3,
-      name: 'Лунь',
-      species: 'Circus cyaneus',
+      name: 'Сапсан',
+      species: 'Falco peregrinus',
       description:
-        'Лунь – это небольшой сокол. Питается в основном мышевидными грызунами, основа его рациона – полёвки, хомяки, мыши. Оперение луня может быть пепельно-серым. С такой птицей связано сравнение «седой, как лунь».',
-      image: 'https://live.staticflickr.com/4703/38657345350_2a5a9a88db_b.jpg',
+        'Это самая быстрая птица в мире. По оценкам специалистов, в стремительном пикирующем полёте она способна развивать скорость свыше 322 км/ч, или 90 м/с. Однако в горизонтальном полете уступает в скорости стрижу. Удар когтями задних пальцев бывает настолько сильным, что даже у достаточно крупной дичи может отлететь голова.',
+      image: 'https://live.staticflickr.com/65535/49583260681_f032a9121d_z.jpg',
       audio:
-        'https://www.xeno-canto.org/sounds/uploaded/BLMSIUFTFU/XC513498-190709_1175_Cir.cyan-f.mp3',
+        'https://www.xeno-canto.org/sounds/uploaded/BLMSIUFTFU/XC405710-180312_0191_FAP-F-żebranie.mp3',
     },
     {
       id: 4,
-      name: 'Сокол',
-      species: 'Falco peregrinus',
+      name: 'Чеглок',
+      species: 'Falco subbuteo',
       description:
-        'Латинское название сокола Falco произошло от слова «серп» из-за серповидной формы крыльев. Длинные и широкие крылья позволяют соколу высоко подниматься в небо и свободно парить. Скорость полёта сокола достигает 280-320 километров в час.',
-      image: 'https://live.staticflickr.com//65535//49310710607_92a3a145a9.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC496049-Pilgrimsfalk_06.mp3',
+        'Собственного гнезда чеглок не строит, но занимает старые гнёзда других хищных птиц — чаще чёрной и серой вороны, сороки или ястреба-перепелятника. Гнездо всегда расположено в верхней части дерева с хорошим обзором на высоте 8—37 м (в среднем 15 м) от земли.',
+      image: 'https://live.staticflickr.com/65535/49563041808_4112f37659_z.jpg',
+      audio:
+        'https://www.xeno-canto.org/sounds/uploaded/WIPMNWUHXI/XC393712-Bv_DurbeLat_170811-0920.mp3',
     },
     {
       id: 5,
-      name: 'Ястреб',
-      species: 'Accipiter gentilis',
+      name: 'Стервятник',
+      species: 'Neophron percnopterus',
       description:
-        'Для всех ястребов характерны широкие и короткие крылья. Ещё один отличительный признак - белые «брови» над глазами. Славянские дружинники размещали изображение ястреба на своих знаменах, как символ отваги, мощи и безжалостности к врагам.',
-      image: 'https://live.staticflickr.com//65535//49024617331_b9d0d2c9b3.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC512740-Duvh%C3%B6k_09.mp3',
+        'Стервятники — весьма социальные животные и живут в небольших группах. В саваннах они часто встречаются лишь парами. Отложенные два яйца с несколькими коричневыми пятнами насиживаются обоими родителями в течение 42 дней. Спустя 80 дней после рождения молодые птенцы начинают летать.',
+      image: 'https://live.staticflickr.com/65535/40939797813_f719a598a2_z.jpg',
+      audio:
+        'https://www.xeno-canto.org/sounds/uploaded/ILUHRFXDNU/percnoptere%20dEgypte%20chickcall.mp3',
     },
     {
       id: 6,
-      name: 'Филин',
-      species: 'Bubo bubo',
+      name: 'Змееяд',
+      species: 'Circaetus gallicus',
       description:
-        'Полет филина бесшумный, зрение очень острое. Эти особенности делают птицу непревзойденным ночным охотником. У филина нет естественных врагов, ни один зверь не охотится на взрослых птиц. А вот на птенцов нападают лисы и волки.',
-      image: 'https://live.staticflickr.com/65535/48137123012_393653c2e4.jpg',
+        'Очень редкий исчезающий вид птиц, занесён в Красную книгу России и Красную книгу Беларуси. Один из самых пугливых и недоверчивых по отношению к человеку пернатых хищников. Змееяд ест почти только змей, и если ему попадётся большая змея он просто съедает внутренности, разрывая змею по кускам.',
+      image: 'https://live.staticflickr.com/4459/26153202299_c854f212f5_z.jpg',
       audio:
-        'https://www.xeno-canto.org/sounds/uploaded/WNLIDKJKXT/XC518386-sense%20t%C3%ADtol.mp3',
+        'https://www.xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC369005-circaete%20parade%20vol%20%2B.mp3',
     },
   ],
   [
     {
       id: 1,
-      name: 'Альбатрос',
-      species: 'Diomedea exulans',
+      name: 'Гагарка',
+      species: 'Alca torda',
       description:
-        'Альбатрос - самая крупная летающая птица в мире. Размах крыльев достигает три с половиной, вес - десять килограммов. Большую часть жизни альбатросы проводят в воздухе, покрывая над океанскими просторами огромные расстояния',
-      image: 'https://live.staticflickr.com/7557/16260253965_8e9430cb66.jpg',
+        'Гага́рка — вид морских птиц из семейства чистиковых (Alcidae). После истребления нелетающей бескрылой гагарки в XIX веке этот вид остался единственным в роде гагарок. Пищу гагарки добывают под водой. Она состоит главным образом из сельди и анчоусов, а также из раков и морских червей.',
+      image: 'https://live.staticflickr.com/65535/50139859381_4babe191ae_z.jpg',
       audio:
-        'https://www.xeno-canto.org/sounds/uploaded/WOEAFQRMUD/XC293087-Diomedea%20exulans151120_T254.mp3',
+        'https://www.xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC487887-2018-07-19%20Reykholar%20-%20Brajanslaekur%20-%20Latrabajarg%20180719%20Pingouin%20torda%20%285%29.mp3',
     },
     {
       id: 2,
-      name: 'Олуша',
-      species: 'Sula nebouxii',
+      name: 'Хохлатый баклан',
+      species: 'Phalacrocorax aristotelis',
       description:
-        'Особенностью голубоногой олуши является не только насыщенный ярко-синий цвет лапок, но еще и тот факт, что они очень теплые. В то время как другие виды птиц греют кладки своим телом, голубоногая олуша делает это с помощью лапок',
-      image: 'https://live.staticflickr.com/800/40645471394_4422e69ed8.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/YHKQPPJDVP/XC411507-171217_1491%20BF%20Booby%205ft%20IDLP%201230%20mp3%20amp.mp3',
+        'Исключительно морская птица. Осторожна, хорошо плавает и ныряет. Летает довольно тяжело и долго в воздухе не держится. Взлетает с трудом, обычно со скалы или с уступа. Взлетая с воды набирает разбег. Появляется на суше только в период гнездования. Остальное время проводит в море недалеко от берегов.',
+      image: 'https://live.staticflickr.com/4219/34969462966_ef9ccf03cf_w.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/MCFGTDXKHO/XC495805-190823_05KS.mp3',
     },
     {
       id: 3,
-      name: 'Буревестник',
-      species: 'Puffinus griseus',
+      name: 'Клуша',
+      species: 'Larus fuscus',
       description:
-        'Размеры буревестниковых разные. Самые маленькие из них в длину составляют до 25 см, самые большие - до 1 м, при размахе крыльев около 2 м. Существует поверье, что появление буревестника в воздухе предвещает бурю, о чем говорит само название птицы.',
-      image: 'https://live.staticflickr.com//607//22136056020_935cb113f9.jpg',
+        'Гнездится парами либо небольшими колониями, включающими в себя до нескольких десятков пар. Гнездо располагается на земле, обычно на приморском лугу среди травы, реже в дюнах, на высоком скалистом берегу, в вересковой пустоши. В случае, когда в колонии не хватает места, может устроить гнездо на крыше здания. В качестве строительного материала используется мох, прошлогодняя трава, щепочки, перья и т. п.',
+      image: 'https://live.staticflickr.com/7762/28695667374_6339ec003b_c.jpg',
       audio:
-        'https://www.xeno-canto.org/sounds/uploaded/XQEVNREHJY/SHEARWATER%20Christmas%20Island_04_Motu_Isla%20de%20Pascua-Easter%20Island_CH_4MAR03_Alvaro%20Jaramillo.mp3',
+        'https://www.xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC484474-2018-07-26%20Heradsvotn%20-%20Kalbaldur%20180726%20Goeland%20brun%20divers%20cris%20de%20vol%20et%20ricannement.mp3',
     },
     {
       id: 4,
-      name: 'Пеликан',
-      species: 'Pelecanus',
+      name: 'Морской зуёк',
+      species: 'Charadrius alexandrinus',
       description:
-        'Пеликаны — обитатели морей и рек. Ходят они неуклюже, но хорошо летают и плавают. Питаются в основном рыбой, устраивают коллективные охоты — выстроившись полукругом хлопают по воде крыльями и клювами и вытесняют напуганную рыбу на мелководье.',
-      image: 'https://live.staticflickr.com/7794/28394655875_0a5c8d0e60_k.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/XAMHIHFTZG/XC331138-call1.mp3',
+        'Небольшая птица размером с воробья, обитающая на открытых и низменных побережьях солоноватых и солёных водоёмов. Перелётная птица. Гнездо зуйка выглядит как небольшое углубление с камешками или обломками раковин. Самка откладывает 3 бледно-оливковых или глинисто-желтоватых с тёмными крапинками яйца.',
+      image: 'https://live.staticflickr.com/65535/48264344371_0e48a3bfa3_n.jpg',
+      audio:
+        'https://www.xeno-canto.org/sounds/uploaded/KDNLNVNAOM/XC464633-Kentish%20Plover%202017%2004%2006%20South%20Korea%2C%20Buan%2C%20%28Gosapo%20Bay%2C%20Daehang-Gil%29%20-%20calls%201830.mp3',
     },
     {
       id: 5,
-      name: 'Пингвин',
-      species: 'Aptenodytes forsteri',
+      name: 'Тупик',
+      species: 'Fratercula arctica',
       description:
-        'Самец императорского пингвина достигает роста 130 см, его масса может приближаться к 50 кг. Из всех современных пингвинов этот вид – самый крупный. Питание пингвина состоит из рыбы, кальмаров и криля. Охотятся птицы в океане большими группами.',
-      image: 'https://live.staticflickr.com/5202/5252413926_8e013a3efd.jpg',
+        'Обитают на побережьях Атлантического и Северного Ледовитого океанов. Гнездятся в норах на птичьих базарах. Питаются рыбой, в основном песчанками. Русское название «тупик» происходит от слова «тупой» и связано с массивной, округлой формой клюва птицы',
+      image: 'https://live.staticflickr.com/7875/39745392913_45cb99950b_z.jpg',
       audio:
-        'https://www.xeno-canto.org/sounds/uploaded/OOECIWCSWV/XC449827-LS100829%20King%20Penguin%20call%20A.mp3',
+        'https://www.xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC432782-2018-08-04%20Borgafjordur%20Macareux%20Moine%20%2B%2B%2B%2B%2B.mp3',
     },
     {
       id: 6,
-      name: 'Чайка',
-      species: 'Larus argentatus',
+      name: 'Розовый пеликан',
+      species: 'Pelecanus onocrotalus',
       description:
-        'Чайки населяют берега морей, озёр, рек, водохранилищ, болот, часто гнездятся на островах. С конца прошлого века чайки стали появляться в крупных городах, где устраивает гнёзда на крышах зданий. Все чайки ведут колониальный образ жизни.',
-      image: 'https://live.staticflickr.com/65535/48577115317_7034201dde.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC501190-190801_06.50h_zilvermeeuw_duinen%20van%20goeree_roep_2ex_overvliegend_gezien_.mp3',
+        'Питается розовый пеликан, как и все пеликаны, преимущественно рыбой. В Европе он предпочитает карпов, в Африке — цихлид. Крупная рыба составляет до 90 % его корма; остальные 10 % — мелкая рыба, а в Африке и яйца и птенцы капского баклана (Phalacrocorax capensis). Дневная потребность в еде — 900—1200 г (или 2—4 крупные рыбы).',
+      image: 'https://live.staticflickr.com/65535/49830258628_bea2915c8a_n.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/XAMHIHFTZG/XC331139-call2.mp3',
     },
   ],
 ];
