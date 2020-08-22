@@ -21,7 +21,8 @@ export default class RandomBird extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.id !== prevProps.id || this.props.step !== prevProps.step) {
+    const { id, step } = this.props;
+    if (id !== prevProps.id || step !== prevProps.step) {
       this.updateBird();
     }
   }

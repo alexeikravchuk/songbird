@@ -6,7 +6,7 @@ export const GameResult = ({ score, resetGame }) => {
 
   const resultText =
     score === maxScore ? (
-      <span className='victory'>С абсолютной победой!!!</span>
+      <span className="victory">С абсолютной победой!!!</span>
     ) : (
       `Вы прошли викторину и набрали ${score} баллов из ${maxScore}`
     );

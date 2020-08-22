@@ -109,6 +109,7 @@ export default class App extends Component {
             right={<BirdDetails itemId={selectedItem} step={step} birdService={this.birdService} />}
           />
           <button
+            type="button"
             className={`btn btn-lg btn-block ${isCorrect ? 'btn-success' : 'btn-secondary'}`}
             onClick={this.nextPage}
           >

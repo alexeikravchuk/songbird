@@ -58,6 +58,11 @@ const config = {
         loader: 'eslint-loader',
       },
       {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           {
@@ -91,7 +96,7 @@ const config = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.tsx', '.js', '.jsx'],
     alias: {
       'react-dom': '@hot-loader/react-dom',
     },
