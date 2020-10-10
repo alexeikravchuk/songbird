@@ -1,0 +1,24 @@
+.item-list {
+  margin-bottom: 1rem;
+  .list-group-item {
+    cursor: pointer;
+  }
+  .marker {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #445;
+    &.correct {
+      background-color: #494;
+    }
+    &.error {
+      background-color: #f44;
+    }
+  }
+}
+
+.item-list .item-list .list-group-item:hover {
+  background-color: #444;
+}
